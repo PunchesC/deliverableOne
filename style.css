@@ -1,0 +1,170 @@
+html{
+  font-family: 'Bungee', cursive;
+  overflow-x: hidden;
+
+  
+
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+
+
+
+
+header{
+  display: flex;
+  justify-content: space-between;
+}
+ 
+
+
+
+#navigation{
+  
+  
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content: flex-end;
+  color:#7944e6;
+  align-items: center;
+ 
+}
+
+/* LOOK INTO PLACING THE NAV LINKS */
+a{
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  
+}
+
+li{
+
+  font-size: 100%;
+}
+
+
+
+a:hover{
+  color:#10fdff;
+}
+
+#about-section{
+  background-color:#ff00ff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding:20px;
+  text-align:center;
+ 
+  
+}
+
+#about-text{
+  text-align: left;
+  font-weight:bold;
+  line-height: 12px;
+}
+
+#truck-size{
+  width:60%;
+}
+
+p{
+  font-size: 12px;
+}
+
+
+#menu{
+ 
+  
+ 
+  text-align: center;
+  margin-right:65px;
+  margin-left:65px;
+
+  
+  
+  
+}
+
+
+
+
+
+
+.borders{
+  border: solid #7944e6;
+  border-width: 3px;
+  
+  
+  margin-bottom: 10px;
+ 
+  
+}
+
+.borders > h5{
+  text-align:center
+}
+
+h5{
+  color:#7944e6;
+}
+
+.menu-images{
+  max-width: 100%;
+  
+}
+
+
+@media screen and (min-width:768px){
+  #about-section{
+    display:flex;
+  }
+  #menu{
+    display:flex;
+    
+    grid-gap:70px;
+    
+    
+    
+  }
+  
+  .borders{
+    flex: 1;
+    display:flex;
+    flex-direction: column;
+  }
+    
+  
+
+
+  #navigation{
+    font-size: 15px;
+    
+  }
+}
+
+@media screen and (max-width:540px){
+  
+  
+  #logo-section{
+    width:50%
+    
+  }
+
+  #logo{
+    width:150px;
+    text-align:center;
+  }
+  #navigation-section{
+    width:50%;
+    font-size: 12px;
+  }
+}
