@@ -1,40 +1,28 @@
-html{
+html {
   font-family: 'Bungee', cursive;
   overflow-x: hidden;
-
-  
-
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
-
-
-
-
-header{
+header {
   display: flex;
   justify-content: space-between;
 }
- 
 
-
-
-#navigation{
-  
-  
-  display:flex;
-  flex-flow:row nowrap;
+#navigation {
+  display: flex;
+  flex-flow: row nowrap;
   justify-content: flex-end;
-  color:#7944e6;
+  color: #7944e6;
   align-items: center;
- 
 }
 
 /* LOOK INTO PLACING THE NAV LINKS */
-a{
+a {
   text-decoration: none;
   display: block;
   padding: 10px;
@@ -42,129 +30,106 @@ a{
 
 ul {
   list-style: none;
-  
 }
 
-li{
-
+li {
   font-size: 100%;
 }
 
-
-
-a:hover{
-  color:#10fdff;
+a:hover {
+  color: #10fdff;
 }
 
-#about-section{
-  background-color:#ff00ff;
+#about-section {
+  background-color: #ff00ff;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding:20px;
-  text-align:center;
- 
-  
+  padding: 20px;
+  text-align: center;
 }
 
-#about-text{
+#about-text {
   text-align: left;
-  font-weight:bold;
+  font-weight: bold;
   line-height: 12px;
 }
 
-#truck-size{
-  width:60%;
+#truck-size {
+  width: 60%;
 }
 
-p{
+p {
   font-size: 12px;
 }
 
-
-#menu{
- 
-  
- 
+#menu {
   text-align: center;
-  margin-right:65px;
-  margin-left:65px;
-
-  
-  
-  
+  margin-right: 65px;
+  margin-left: 65px;
 }
 
-
-
-
-
-
-.borders{
+.borders {
   border: solid #7944e6;
   border-width: 3px;
-  
-  
   margin-bottom: 10px;
- 
-  
 }
 
-.borders > h5{
-  text-align:center
+.borders > h5 {
+  text-align: center;
 }
 
-h5{
-  color:#7944e6;
+h5 {
+  color: #7944e6;
 }
 
-.menu-images{
+.menu-images {
   max-width: 100%;
-  
 }
 
+@media screen and (min-width: 768px) {
+  html {
+    margin: 25px;
+    margin-top: 0px;
+  }
 
-@media screen and (min-width:768px){
-  #about-section{
-    display:flex;
+  #about-section {
+    display: flex;
   }
-  #menu{
-    display:flex;
-    
-    grid-gap:70px;
-    
-    
-    
+  #menu {
+    display: flex;
+    grid-gap: 70px;
   }
-  
-  .borders{
+
+  .borders {
     flex: 1;
-    display:flex;
+    display: flex;
     flex-direction: column;
   }
-    
-  
+  .menu-images {
+    height: auto;
+  }
 
-
-  #navigation{
+  #navigation {
     font-size: 15px;
-    
+  }
+
+  #about-text {
+    width: 75%;
+    padding-top: 35px;
   }
 }
 
-@media screen and (max-width:540px){
-  
-  
-  #logo-section{
-    width:50%
-    
+@media screen and (max-width: 540px) {
+  #logo-section {
+    width: 50%;
   }
 
-  #logo{
-    width:150px;
-    text-align:center;
+  #logo {
+    width: 150px;
+    text-align: center;
   }
-  #navigation-section{
-    width:50%;
+  #navigation-section {
+    width: 50%;
     font-size: 12px;
   }
 }
